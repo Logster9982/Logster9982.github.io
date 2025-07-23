@@ -19,7 +19,7 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Logster's Blog
-email: ALTOMOLX@dukes.jmu.edi
+email: ALTOMOLX@dukes.jmu.edu
 description: >- # this means to ignore newlines until "baseurl:"
   Test for now.
 domain: logster9982.github.io
@@ -28,9 +28,11 @@ url: "https://logster9982.github.io/" # the base hostname & protocol for your si
 github_username:  Logster9982
 
 # Build settings
-theme: minima
+
+remote_theme: pages-themes/midnight@v0.2.0
 plugins:
-  - jekyll-feed
+- jekyll-remote-theme # add this line to the plugins list if you already have one
+- jekyll-feed
 
 # Exclude from processing.
 # The following items will not be processed, by default.
