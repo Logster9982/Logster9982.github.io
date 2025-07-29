@@ -18,10 +18,11 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Logster's Blog
-email: ALTOMOLX@dukes.jmu.edu
+title: Logan A.
+email: altomolx@dukes.jmu.edu
 description: >- # this means to ignore newlines until "baseurl:"
-  Test for now.
+  Welcome to my website! This is where I will share some of my small projects I've done for both work, school, 
+  and personal life, alongside events I'm involved in.
 domain: logster9982.github.io
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://logster9982.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
