@@ -22,10 +22,6 @@ This section contains two important elements of an API request: The api key and 
 
 The header is where your API key goes, and Start.gg is very specific in that it *has* to go in the following template
 
- ```python
- {"Authorization": "Bearer 0000000000000"}
- ```
-
 ![T header with an API key](/assets/startgg-api/APIKey.png)
 *Replace the fake API key with a real one to access the data.*
 
@@ -38,7 +34,7 @@ You can see an array of arrays formatted nicely to the side of the window. I enc
 
 ## Accessing the API with the Python Requests API
 
-The GraphQL endpoint for start.gg is *very fickle* and requires specific variables to go through. We will need to use the Python `requests` library to be able to send a `POST` request to start.gg. In this request, there are three sections the `requests` needs to obtain before communicating to start.gg.
+The GraphQL endpoint for start.gg is *very fickle* and requires specific variables to go through. We will need to use the Python `requests` library to be able to send a `POST` request to start.gg. In this request, there are three sections the `requests` module needs to obtain before communicating with start.gg.
 
 * A URL
 * A Header
