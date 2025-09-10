@@ -1,0 +1,16 @@
+:root {
+  --dark: #333;
+  --mid: #555;
+  --light: #ddd;
+  --white: #fff
+}
+
+/* Set default to light mode */
+body {
+  background-color: var(--white);
+  color: var(--dark);
+}
+/* TODO: Stealth dark mode:
+ * Set the font colors to mid, except for those that are on a gray
+ * background. Make that text have a light font color.
+ */

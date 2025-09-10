@@ -1,0 +1,146 @@
+/* Map the semantic elements to grid area names: */
+
+header   { grid-area: header; }
+main     { grid-area: content; }
+nav      { grid-area: nav; }
+h1       {grid-area: h1}
+hr       { grid-area: hr;}
+
+/* Set default values for the body and list  */
+body {
+	display: grid;
+	gap: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  width: fit-content;
+}
+
+p {
+  font-family: Arial;
+}
+
+h2 {
+  font-family: sans-serif;
+}
+
+h1 {
+  font-family: sans-serif;
+}
+
+h3 {
+  font-family: sans-serif;
+}
+
+button {
+  padding-top: 4;
+  font-size: 25px;
+  white-space: nowrap;
+
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 2vw;
+  padding-right: 10%;
+  padding-top: 1vw;
+}
+
+/* Small and medium layouts from tutorial */
+@media (min-width: 500px) {
+	body {
+		padding-right: 2vw;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas:
+      "header  header"
+      "nav     nav"
+      "sidebar content"
+      "ad      footer";
+
+  }
+  button {
+    margin-bottom: 1.5vw;
+    margin-left: 5vw;
+  }
+}
+
+@media (min-width: 900px) {
+  body {
+    grid-template-columns: 1fr 5fr;
+    grid-template-areas:
+      "header header  header"
+      "hr     hr      hr"
+      "content    content content"
+      "content    content content"
+      "content content  content"
+  }
+}
+
+
+ @media (max-width: 499px) {
+  ul {
+    display: flexbox;
+    justify-content: space-around;
+  }
+}
+ 
+@media (min-width: 500px) {
+  ul {
+    display: flexbox;
+    flex-direction: column;
+    justify-content: center
+    
+  }
+}
+
+@media print {
+  body {
+    padding-left: 2vw;
+    padding-right: 2vw;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "content"
+      "footer"
+  }
+  side {display: none;}
+  ad {display: none;}
+  nav {display: none;}
+  aside {display: none;}
+}
+
+.movable {
+  position: absolute;
+  z-index: 9;
+  background-color: #f1f1f1;
+  text-align: center;
+  border: 1px solid #d3d3d3;
+}
+
+.movableHeader {
+  padding: 10px;
+  cursor: move;
+  z-index: 10;
+  background-color: #2196F3;
+  color: #fff;
+}
+
+/* TODO: Tiny and small viewports:
+ * List is a flex-box with space-around horizontal spacing
+ */
+
+/* TODO: Medium and large viewports:
+ * List is a column flex-box, centered horizontally.
+ * Give 3vh spacing below each list item.
+ */
+
+/* TODO: Print formatting:
+ * Make two columns with the right taking up 90% width.
+ * The header and footer span both columns at the top and
+ * bottom, respectively. The main content is only in the
+ * right. Do not show the #side, #ad, or nav bar.
+ */
+

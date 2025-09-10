@@ -1,0 +1,96 @@
+/* Use this file to control the layout of cards (articles) within the
+ * main region of the page. */
+
+h2 {grid-area: h2;}
+#article-1 {grid-area: a1;}
+#article-2 {grid-area: a2;}
+#article-3 {grid-area: a3;}
+#article-4 {grid-area: a4;}
+#article-5 {grid-area: a5;}
+#article-6 {grid-area: a6;}
+
+
+/* TODO: Map the articles to grid areas */
+
+
+@media (max-width: 699px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "h2"
+            "a1"
+            "a2"
+            "a3"
+            "a4"
+            "a5"
+            "a6";
+    }
+}
+/* TODO: Make the main element into a grid to hold the cards */
+
+/* TODO: Tiny and small layouts:
+ * All articles in a vertical column using grid-template-areas with
+ * the main h2 title at the top. */
+
+ @media (min-width: 700px) {
+	main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2vw;
+    row-gap: 1vw;
+    grid-template-areas:
+      "h2 h2"
+      "a1 a2"
+      "a3 a4"
+      "a5 a6";
+  }
+}
+
+/* TODO: Medium layouts:
+ * Article cards are displayed 2 per row (articles 1 and 2 in the top row,
+ * 3 and 4 in the second, 5 and 6 in the third). Use 1vh for row gaps and
+ * 2vw for column gaps. Both columns should have the same width. Again,
+ * place the main h2 title at the top. */
+
+
+
+/* TODO: Large layouts:
+ * Article cards are now in 3 equal-width columns with the main h2 title
+ * at the top. */
+
+ @media (min-width: 1000px) {
+    main {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-areas:
+        "h2 h2 h2"
+        "a1 a2 a3"
+        "a4 a5 a6";
+    }
+  }
+
+@media print {
+    main {
+        display: grid;
+        margin-left: 10%;
+        margin-right: 0px;
+        column-gap: 0px;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "a1"
+        "a2"
+        "a3"
+        "a4"
+        "a5"
+        "a6"
+    }
+    main > h2 {display: none;}
+}
+
+/* TODO: Print formatting:
+ * Make the main content into a flex-box with the articles
+ * in a column with space between the items vertically. Get rid
+ * of the vertical padding on the p and h3 elements inside
+ * the articles (keeping 1vw padding on the sides).
+ * Remove the main h2 title from the display. */

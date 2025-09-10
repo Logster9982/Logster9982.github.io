@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detective Board</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap-reboot.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="layout.css">
+  <link rel="stylesheet" href="cards.css">
+  <link rel="stylesheet" href="dark.css">
+  <link rel="stylesheet" href="sidebar.css">
+  <link rel="stylesheet" href="modal.css">
+</head>
+
+<!-- To check your layout, you can add class="debug" to the body element to
+     add colors and borders to the major sections -->
+<body>
+  <header><h1>Detective Board ver 0.3</h1>
+    <div></div>
+    <nav>
+<button type="button" id="add">Add</button>
+<button type="button" id="unf">Edit</button>
+<button type="button" id="unfinished">Delete</button>
+<button type="button" id="reset">Drive</button>
+<button type="button" id="clear">Clear</button>
+<button type="button" id="export">Blob</button>
+
+    </nav>
+  </header>
+
+
+  <div id="main">
+    <button style="margin-left: 1.5vw;" class="hidden" onclick="openNav()">☰ Open Sidebar</button>  
+  </div>
+
+  <aside class="modal fade" tabindex="-1" id="user-modal">
+    <div class="modal-dialog">
+      <form class="modal-content card-form" id="user-form">
+        <header class="modal-header">
+          <h3>Add note</h3>
+        </header>
+        <section class="modal-body">
+          <h3>Form</h3>
+          <div id="edit" class="form-group">
+            <label>
+              <input name="edit" type="text" placeholder="type number of element">
+            </label>
+          </div>
+          <div class="form-group">
+            <label>
+              <input name="name" type="text" placeholder="Name">
+            </label>
+          </div>
+          <div class="form-group">
+            <label>
+              <input name="bio" type="text" placeholder="Bio">
+            </label>
+          </div>
+          <div class="form-group">
+            <label>
+              <input name="details" type="text" placeholder="Details">
+            </label>
+          </div>
+          <div id="destroy" class="form-group">
+            <label>
+              <input name="delete" type="text" placeholder="type number to delete">
+            </label>
+          </div>
+          <div id="drive" class="form-group">
+            <p>Copy the value from the blob to the A1 sheet</p>
+            <label>
+              <input name="drive" type="text" placeholder="Enter sheets id (url number /d)">
+            </label>
+          </div>
+        </section>
+        <footer class="modal-footer">
+          <button id="close" class="btn-edit-guest" type="button">submit</button>
+        </footer>
+      </form>
+    </div>
+  </aside>
+
+  
+  <main>
+
+<!--     <div id="mydiv1" class="movable">
+      <div id="mydivheader" class="movableHeader">Person</div>
+      <p>Picture</p>
+      <p>John Paul Jones, Colonial, ??</p>
+      <p>Caused numerous incidents of piracy across the coast of Britian</p>
+    </div> -->
+
+<!--     <div id="mydiv2" class="movable">
+      <div id="mydivheader" class="movableHeader">Person</div>
+      <img src="https://picsum.photos/70" alt="person three picture">
+      <p>Bio</p>
+      <p>Info</p>
+    </div> -->
+
+<!--     <div id="mydiv" class="movable">
+      <div id="mydivheader" class="movableHeader">Person</div>
+      <p>Picture</p>
+      <p>Bio</p>
+      <p>Info</p>
+    </div> -->
+
+  </main>
+  <div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="temp.html">Resources</a>
+    <hr>
+    <a href="doc.html">Documentation</a>
+    <a href="temp.html">Community</a>
+    <a href="examples.html">Examples</a>
+    <hr>
+    <a href="temp.html">About</a>
+    <a href="https://twitter.com/DetectiveBoard001">Twitter</a>
+    <a href="https://facebook.com/DetectiveBoard001">Facebook</a>
+    <hr>
+    <a href="report.html">REPORT</a>
+
+    
+  </div>
+
+<!--   <aside id="side"><h2>Sidebar</h2></aside>
+  <aside id="ad"><h2>Advertising</h2></aside> -->
+<!--   <footer><h2>The footer</h2></footer> -->
+
+  <script src="script.js"></script>
+  <script async defer src="https://apis.google.com/js/api.js" onload="gapiLoaded()"></script>
+  <script async defer src="https://accounts.google.com/gsi/client" onload="gisLoaded()"></script>
+  <hr>
+</body>
+
+</html>
