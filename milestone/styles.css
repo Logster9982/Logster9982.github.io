@@ -1,0 +1,73 @@
+/* Create rounded-corner buttons */
+nav button {
+	border: 2px black solid;
+	border-radius: 5px;
+	width: 80px;
+}
+header > div {
+  border-left: 5px solid  black;
+  height: 45px;
+}
+
+/* Make the articles into cards */
+article {
+	border: 1px solid black;
+	border-radius: 5px;
+	padding: 0;
+}
+
+article > h3, main > h2 {
+	background: lightgray;
+	padding: 1vh 1vw;
+	font-size: 1.6em;
+}
+
+article > p {
+	padding: 1vh 1vw;
+}
+
+.center {
+  text-align: center;
+}
+
+h1 {
+  font-family: sans-serif;
+}
+
+hr {
+  border-top: 5px solid black;
+  height: 5px;
+}
+
+.hide {
+  display: none
+}
+
+/* Set the debug class on body to view outlines of the regions */
+.debug {
+  header {
+    background-color: red;
+    border: 5px dashed #450085;
+  }
+  main {
+    background-color: orange;
+    border: 5px dashed #333333;
+  }
+  nav {
+    background-color: yellow;
+    border: 5px dashed #009698;
+  }
+  #side {
+    background-color: green;
+    border: 5px dashed #8EE4D7 ;
+  }
+  #ad {
+    background-color: #F4EFE1;
+    border: 5px dashed blue;
+  }
+  footer {
+    background-color: #cbb677;
+    border: 5px dashed #b599ce;
+  }
+}
+
