@@ -291,8 +291,8 @@ function restore(pieces, numb) {
   localStorage.setItem("items", JSON.stringify(drags));
 }
 
-const CLIENT_ID = '208574230386-aqlajmssfbo2h6sqac320o9c9fjcm0i1.apps.googleusercontent.com';
-      const API_KEY = 'AIzaSyCVjc60ZnV1qCI2J8YHyvUSH2GSRp-a-Do';
+const CLIENT_ID = '';
+      const API_KEY = '';
 
       // Discovery doc URL for APIs used by the quickstart
       const DISCOVERY_DOC = 'https://sheets.googleapis.com/$discovery/rest?version=v4';
