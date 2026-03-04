@@ -5,7 +5,7 @@ date:   2026-03-02 15:47:45 -0400
 categories: CTF
 ---
 
-Scavenger hunt is a challenging CTF that was shown at VMI cyberfusion. It consists of **6 hints** that help tell you how to break into the many layers of ciphers and encodings that the original flag was wrapped around. Cyberchef is a very useful tool for this challenge I would recommend to follow along, fortunately it's a web tool so you don't need to install it, just go to https://gchq.github.io/CyberChef/.
+[Scavenger hunt](http://Scavengerhunt.challenges.virginiacyberrange.net) is a challenging CTF that was shown at VMI Cyberfusion. It consists of **6 hints** that help tell you how to break into the many layers of ciphers and encodings that the original flag was wrapped around. Cyberchef is a very useful tool for this challenge I would recommend to follow along, fortunately it's a web tool so you don't need to install it, just go to [gchq.github.io/CyberChef](https://gchq.github.io/CyberChef/).
 
 ![How the website looks at the beginning](/assets/scavenger-hunt/website.png)
 
