@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "VMI Cyberfusion Scavenger Huny Writeup"
+title:  "VMI Cyberfusion Scavenger Hunt Writeup"
 date:   2026-03-02 15:47:45 -0400
 categories: CTF
 ---
